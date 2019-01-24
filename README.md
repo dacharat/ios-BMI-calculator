@@ -1,1 +1,1 @@
-# ios-android-calculator
+# ios-BMI-calculator
