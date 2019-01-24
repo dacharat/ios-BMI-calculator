@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BMI-Calculator.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-19-GzZ">
+                                <rect key="frame" x="21" y="25" width="333" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="v6b-zZ-GAE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee5-36-zYG">
+                                <rect key="frame" x="90" y="250" width="195" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-3e-fmj">
+                                <rect key="frame" x="90" y="288" width="195" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your height(cm): " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-e7-ALY">
+                                <rect key="frame" x="27" y="341" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zJW-xr-vO2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-kO-xrU">
+                                <rect key="frame" x="186" y="341" width="159" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEF-Jh-gNs">
+                                <rect key="frame" x="179.5" y="401" width="168.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="whZ-J7-eIp"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your weight(kg):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJx-Em-4Qp">
+                                <rect key="frame" x="27" y="401" width="125.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yt7-AA-uKv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acy-J6-tmj">
+                                <rect key="frame" x="100" y="461" width="175" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="bmiCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vd3-MQ-IDQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EK3-kO-xrU" secondAttribute="trailing" constant="30" id="1LM-vi-kWz"/>
+                            <constraint firstItem="cFW-e7-ALY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="1OE-GJ-2Kp"/>
+                            <constraint firstItem="Ee5-36-zYG" firstAttribute="top" secondItem="ydt-19-GzZ" secondAttribute="bottom" constant="15" id="DPN-sC-wew"/>
+                            <constraint firstItem="acy-J6-tmj" firstAttribute="top" secondItem="mEF-Jh-gNs" secondAttribute="bottom" constant="30" id="I2X-J4-mv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ee5-36-zYG" secondAttribute="trailing" constant="90" id="IkJ-uL-Nuc"/>
+                            <constraint firstItem="cFW-e7-ALY" firstAttribute="top" secondItem="zPJ-3e-fmj" secondAttribute="bottom" constant="30" id="QMK-Cr-QcH"/>
+                            <constraint firstItem="mEF-Jh-gNs" firstAttribute="leading" secondItem="fJx-Em-4Qp" secondAttribute="trailing" constant="27" id="TJ3-cP-8H0"/>
+                            <constraint firstItem="EK3-kO-xrU" firstAttribute="top" secondItem="zPJ-3e-fmj" secondAttribute="bottom" constant="30" id="Ub1-aw-V7U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acy-J6-tmj" secondAttribute="trailing" constant="100" id="UcP-Af-krA"/>
+                            <constraint firstItem="ydt-19-GzZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="Urs-2s-c2i"/>
+                            <constraint firstItem="acy-J6-tmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="V5P-hH-WXs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zPJ-3e-fmj" secondAttribute="trailing" constant="90" id="ZGd-SN-mzX"/>
+                            <constraint firstItem="mEF-Jh-gNs" firstAttribute="top" secondItem="EK3-kO-xrU" secondAttribute="bottom" constant="30" id="bgn-rg-Tvg"/>
+                            <constraint firstItem="zPJ-3e-fmj" firstAttribute="top" secondItem="Ee5-36-zYG" secondAttribute="bottom" constant="15" id="dcY-Yd-3Aq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mEF-Jh-gNs" secondAttribute="trailing" constant="27" id="j3d-SG-3bj"/>
+                            <constraint firstItem="EK3-kO-xrU" firstAttribute="leading" secondItem="cFW-e7-ALY" secondAttribute="trailing" constant="27" id="lJe-0i-rtJ"/>
+                            <constraint firstItem="EK3-kO-xrU" firstAttribute="leading" secondItem="cFW-e7-ALY" secondAttribute="trailing" constant="27" id="oOA-1g-541"/>
+                            <constraint firstItem="ydt-19-GzZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="oSb-aL-2Vw"/>
+                            <constraint firstItem="Ee5-36-zYG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="olt-Pl-dOQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ydt-19-GzZ" secondAttribute="trailing" constant="21" id="pyn-yg-ped"/>
+                            <constraint firstItem="fJx-Em-4Qp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="vIT-ya-SuD"/>
+                            <constraint firstItem="EK3-kO-xrU" firstAttribute="leading" secondItem="cFW-e7-ALY" secondAttribute="trailing" constant="27" id="xrZ-16-Vp8"/>
+                            <constraint firstItem="fJx-Em-4Qp" firstAttribute="top" secondItem="cFW-e7-ALY" secondAttribute="bottom" constant="30" id="yNy-fu-vwh"/>
+                            <constraint firstItem="zPJ-3e-fmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="yWF-vL-vWg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bmiResult" destination="Ee5-36-zYG" id="0T3-Bb-Sug"/>
+                        <outlet property="categoryResult" destination="zPJ-3e-fmj" id="X9j-Hu-VOC"/>
+                        <outlet property="heightInput" destination="EK3-kO-xrU" id="cdN-cm-6io"/>
+                        <outlet property="imageView" destination="ydt-19-GzZ" id="fZ8-WG-tJm"/>
+                        <outlet property="weightInput" destination="mEF-Jh-gNs" id="bFF-Ph-ySD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BMI-Calculator.png" width="752" height="139"/>
+    </resources>
 </document>

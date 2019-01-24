@@ -12,6 +12,11 @@
 		043A865C21F9A43B005C5F21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A865A21F9A43B005C5F21 /* Main.storyboard */; };
 		043A865E21F9A43C005C5F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043A865D21F9A43C005C5F21 /* Assets.xcassets */; };
 		043A866121F9A43C005C5F21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A865F21F9A43C005C5F21 /* LaunchScreen.storyboard */; };
+		043A866D21F9A6BA005C5F21 /* underweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A866821F9A6B9005C5F21 /* underweight.png */; };
+		043A866E21F9A6BA005C5F21 /* normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A866921F9A6B9005C5F21 /* normal.png */; };
+		043A866F21F9A6BA005C5F21 /* BMI-Calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A866A21F9A6B9005C5F21 /* BMI-Calculator.png */; };
+		043A867021F9A6BA005C5F21 /* overweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A866B21F9A6B9005C5F21 /* overweight.png */; };
+		043A867121F9A6BA005C5F21 /* obese.png in Resources */ = {isa = PBXBuildFile; fileRef = 043A866C21F9A6BA005C5F21 /* obese.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		043A865D21F9A43C005C5F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043A866021F9A43C005C5F21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043A866221F9A43C005C5F21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043A866821F9A6B9005C5F21 /* underweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underweight.png; sourceTree = "<group>"; };
+		043A866921F9A6B9005C5F21 /* normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal.png; sourceTree = "<group>"; };
+		043A866A21F9A6B9005C5F21 /* BMI-Calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BMI-Calculator.png"; sourceTree = "<group>"; };
+		043A866B21F9A6B9005C5F21 /* overweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overweight.png; sourceTree = "<group>"; };
+		043A866C21F9A6BA005C5F21 /* obese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = obese.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 		043A865521F9A43B005C5F21 /* BMI_Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				043A866A21F9A6B9005C5F21 /* BMI-Calculator.png */,
+				043A866921F9A6B9005C5F21 /* normal.png */,
+				043A866C21F9A6BA005C5F21 /* obese.png */,
+				043A866B21F9A6B9005C5F21 /* overweight.png */,
+				043A866821F9A6B9005C5F21 /* underweight.png */,
 				043A865621F9A43B005C5F21 /* AppDelegate.swift */,
 				043A865821F9A43B005C5F21 /* ViewController.swift */,
 				043A865A21F9A43B005C5F21 /* Main.storyboard */,
@@ -122,9 +137,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A866F21F9A6BA005C5F21 /* BMI-Calculator.png in Resources */,
+				043A866D21F9A6BA005C5F21 /* underweight.png in Resources */,
+				043A867121F9A6BA005C5F21 /* obese.png in Resources */,
+				043A866E21F9A6BA005C5F21 /* normal.png in Resources */,
 				043A866121F9A43C005C5F21 /* LaunchScreen.storyboard in Resources */,
 				043A865E21F9A43C005C5F21 /* Assets.xcassets in Resources */,
 				043A865C21F9A43B005C5F21 /* Main.storyboard in Resources */,
+				043A867021F9A6BA005C5F21 /* overweight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
